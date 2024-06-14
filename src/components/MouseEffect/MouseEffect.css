@@ -1,0 +1,27 @@
+.mouse-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color:#ccccfe;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease-out, width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+    z-index: 9999;
+    mix-blend-mode:exclusion;
+        /* Adjust the blend mode as needed */
+}
+
+.mouse-effect.hovering {
+    top: -50px;
+    left: -50px;
+    width: 80px;
+    height: 80px;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.hover-target {
+    position: relative;
+    z-index: 1;
+}
